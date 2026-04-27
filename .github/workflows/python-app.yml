@@ -1,0 +1,23 @@
+            - name: Build Python Application Standalone Package
+  # You may pin to the exact commit or the version.
+  # uses: BHznJNs/pystand-build@f4b1aea43d22cc7c12ecdc012f6b8130db3143f7
+  uses: BHznJNs/pystand-build@release-7
+  with:
+    # The application name of standalone package.
+    application-name: 
+    # The application type, must be one of 'CLI' and 'GUI'.
+    application-type: # optional, default is GUI
+    # The target Python embedded version to use.
+    python-version: # default is 3.13.9
+    # The entry file path for PyStand.
+    pystand-entry-file: # optional, default is PyStand.py
+    # The path to the requirements.txt file.
+    requirements-path: 
+    # Directories and files to be included in the build directory.
+For directories, they will be copied to <build-directory>/<directory-name>;
+for files, they will be copied to <build-directory>/
+
+    included-files: 
+    # The working directory to run the action in.
+    working-directory: # optional, default is .
+          
